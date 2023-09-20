@@ -1,0 +1,250 @@
+* {
+				margin: 0 auto;
+				padding: 0;
+			}
+
+			header {
+				background-color: #ffffff;
+				width: 1450px;
+				height:180px;
+				box-sizing：border-box
+			}
+
+			.logo {
+				width: 100%;
+				height: 103px;
+				box-sizing：border-box
+			}
+
+			.tupian {
+				width: 283px;
+				height: 102px;
+				float: left;
+				margin-top: -10px;
+			}
+
+			.zu {
+				position: relative;
+				top: 25px;
+				float: left;
+				margin: 5px;
+				font-size: 12px;
+				padding-top: 35px;
+				color: #797979;
+			}
+
+			.rexian {
+				width: 120px;
+				height: 35px;
+				float: right;
+				margin: 10px;
+				padding-right: 40px;
+				font-size: 19px;
+				color: #7D7D95;
+			}
+
+			.dianhua {
+				width: 72px;
+				height: 50px;
+				float: right;
+				margin-right: 5px;
+				padding-right: -320px;
+				padding-top: 35px;
+			}
+
+			.sj {
+				width: 120px;
+				height: 50px;
+				float: right;
+				margin-right: -120px;
+				padding-top: 45px;
+				font-size: 19px;
+			}
+
+			/* 导航栏 */
+			.daohang {
+				width: 100%;
+				height: 70px;
+				background-color: #fafaf9;
+				/* padding-bottom: 20px; */
+				box-sizing：border-box
+			}
+			.daohang ul {
+				position: relative;
+				width: 1020px;
+				height: 100px;
+				/* border: aqua 1px solid; */
+			}
+			.daohang li {
+				width: 60px;
+				margin: 110px 67px;
+				list-style: none;
+				text-decoration: none;
+				float: left;
+				font-size: 24px;
+				margin-top: 20px;
+
+			}
+
+			.daohang ul li a {
+				list-style: none;
+				text-decoration: none;
+				padding-top: 20px;
+				color: #797979;
+			}
+
+			.daohang ul li: {
+				float: left;
+				display: block;
+				margin: 20px -80px;
+				position: relative;
+				color: #4b4b4b;
+				margin-top: -100px;
+			
+			}
+
+		.li {
+			padding-left: 5px;
+			width: 50px;
+			height: 40px;
+			/* background-color: #fff2f8; */
+		}
+			/* 网页身体 */
+			section {
+				width: 1450px;
+				height:1110px;
+				box-sizing：border-box
+			}
+			.z1{
+				height: 500px;
+				/* border: solid 2px red; */
+			}
+			.z1 img {
+				margin-top: -100px;
+				width: 100%;
+				height: 100%;
+			}
+			.z2{
+				width: 100%;
+				height: 600px;
+				box-sizing：border-box
+				background-color: #DEDEDE;
+			}
+			.z3 {
+				text-align: center;
+				margin: 0 auto;
+				margin-top: -60PX;
+				margin-left: -150px;
+				padding: 50px;
+				box-sizing：border-box
+			}
+			.z3 p{
+				font-size: 38px;
+				font-weight: 300;
+				color:#555555 ;
+				padding-left: 150px;
+				margin-top: 50px;
+				text-align: center;
+			}
+			.z3 h4{
+				font-weight: 100;
+				color:#acacac ;
+				padding-left: 115px;
+				text-align: center;
+			}
+			.z4 ul {
+				display: inline-block;
+				margin-left: 60px;
+				position: relative;
+			}
+			
+			.z4 li {
+				list-style: none;
+			
+			}
+			.z4 img{
+				width:300px ;
+				height: 260px;
+			}
+			.z4 {
+				margin-left: -15px;
+			}
+			
+			.z4 ul li {
+				color: #c7cbca;
+				font-size: 14px;
+				margin-left: 60px;
+				text-align: center;
+
+			}
+			
+			.z4 strong {
+				text-align: center;
+				color: #000000;
+				font-size: 16px;
+				margin-left:5px;
+				font-weight: 500;
+				padding: 50px;
+			}
+			/* 网页尾部 */
+			.last-text4 img{
+			    width: 110px;
+			    height: 16px;
+			}
+			.last-text6 img{
+			    width: 120px;
+			    height: 16px;
+			}
+			.last-text7 img:nth-child(1){
+			    width: 15px;
+			    height: 12px;
+			}
+			.last-text7 img:nth-child(4){
+			    width: 15px;
+			    height: 17px;
+			}
+			.last{
+			    position: absolute;
+			    margin-top: 10px;
+			    color: rgb(155, 155, 155);
+			    font-size: 12px;
+			    width: 480px;
+			    height: 150px;
+			    top: 0;
+			    left: 0;
+			    /* border: #000000 1px solid; */
+			}
+			.last img{
+			    vertical-align: middle;
+			}
+			.last a{
+			    color: #3675a6;
+			}
+			footer{
+			    position: relative;
+			    width: 1000px;
+			    height: 150px;
+			    border-top: rgb(210, 210, 210) 1px dashed;
+				margin-top: 50px;
+			}
+			
+			.last span{
+				
+			    line-height: 20px;
+			}
+			.last-db{
+			    position: absolute;
+			    margin: 0;
+			    width: 400px;
+			    font-size: 12px;
+			    top: 10px;
+			    left: 550px;
+			    /* border: #000000 1px solid; */
+			}
+			.last-db span a{
+			    color: #3675a6;
+			}
+			footer a:hover{
+			    background-color: #3377AA;
+			    color: white;
+			}

@@ -1,0 +1,160 @@
+body,p,ul{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #F2F2F2;
+}
+input{
+	border: none;
+	outline: none;
+}
+a{
+	text-decoration: none;
+	margin: 0 auto;
+}
+*{
+	text-decoration: none;
+	list-style: none;
+}
+.addcolor {
+	background-color: #e6e6e6;
+	height: 30px;
+}
+.addcolor li{
+	font-weight: bold;
+	color: #FF7F50;
+	line-height: 30px;
+}
+.addtr {
+	height: 30px;
+}
+.addtr td {
+	text-align: center;
+}
+.topber{
+	width: 100%;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+/* --------导航栏------------ */
+
+/* 导航栏左侧 */
+.header{/* 黑条 */
+	height: 60px;
+	margin-bottom: 30px;
+	background-color: #fffffe;
+	border: 1px solid #E0E0E0;
+}
+.header .site-list{/* 首页字体 */
+	float: left;
+	width: 400px;
+	height: 70px;
+	font-size: 21px;
+}
+.header .site-list ul li{/* 列表排列 */
+	float: left;
+}
+.header .site-list ul li a{ /* 首页字体 */
+	display: block;
+	padding: 15px 0px;
+	color: #FF7F50;
+}
+
+ .login h3{
+	float: left;
+	margin: 15px 15px 0 10px ;
+ }
+ .login img{width: 35px;}
+ .login a{
+	float: left;
+ 	color: #F6F6F6;
+ }
+ .login a:hover{
+ 	color: #FF7F50;
+ }
+/* --------导航栏end--------- */
+
+
+
+/* --------主页内容--------- */
+
+.content-left{
+	width: 200px;
+	height: 450px;
+	position: relative;
+	left: 20px;
+	top: 40px;
+	border: 1px solid #E0E0E0;
+	background-color: white;
+}
+.content-left img{ display:block; margin:15px auto; padding:0; }
+.content-left h4{
+	margin-left:65px;
+}
+.content-left li{ text-align:center; line-height:35px;
+	
+	
+}
+
+.content-left a{color: #000000;}
+.content-left a:hover{color: coral;}
+.content-left,.content-right{display: inline-block;}
+
+.content-right{
+	float: right;
+	width: 750px;
+	height: 450px;
+	position: relative;
+	/* right: 40px; */
+	top: 40px;
+	border: 1px solid #E0E0E0;
+	background-color: white;
+}
+.righ-head{
+	margin: 15px;
+	font-size: 15px;
+}
+.righ-head li{float: left;margin-left: 15px;}
+.righ-head a{color: #000000;}
+.righ-head a:hover{color: coral;}
+
+.righ-down{
+	margin: 40px 0 0 70px;
+	/* display: flex; */
+	width: 83%;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.down-left{
+	/* display: inline; */
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	/* background-color: #FF7F50; */
+}
+.down-left li{margin-bottom: 25px;}
+.down-left,.down-right{display: inline-block;}
+.down-right{
+	width: 80%;
+	float: left;
+	/* background-color: #87CEEB; */
+}
+.sumb{
+	position: relative;
+	left: 45%;
+	top: 10px;
+	width: 80px;
+	height: 40px;
+}
+.sumb:hover{
+	box-shadow: 0 0 2rem -0.5rem rgb(0 0 0 /15%);
+}
+.addcolor button{
+	width: 100px;
+	height: 50px;
+}

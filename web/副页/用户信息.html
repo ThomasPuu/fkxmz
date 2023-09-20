@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/GuanLi.css"/>
+		<base href="http://localhost:8080/FKXMZ/">
+	</head>
+	<body>
+<!---------------- 导航栏 ------------------>
+		<div class="header">
+			<div class="container">
+				<!-- 首页导航 -->
+				<div class="site-list">
+					<ul class="clearfix">
+						<li>
+							<a href="index.html"><b><&nbsp退出</b></a>
+						</li>
+					</ul>
+				</div> 
+				<!-- 搜索框 -->
+				
+			</div>
+		</div>
+
+<!--------------- 内容详细 ----------------->
+
+		<div class="content">
+			<div class="container">
+				
+				<div class="content-left">
+					<h4>个人信息</h4>
+					<img src="img/yonghu3.png" width="80" height="80"/>
+					<ul>
+						<li><a href="#">用户名</a></li>
+						<li><a href="#">邮箱</a></li>
+						<li><a href="#">手机号</a></li>
+						<li><a href="#">修改密码</a></li>
+						<li><a href="#">未付款订单数量</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="content-right">
+					<div class="righ-head">
+						<ul class="addcolor">
+							<li>
+								我的订单
+							</li>
+							<br />
+						</ul>
+						
+					</div>
+					<div class="righ-down">
+                    	<table width="100%" cellpadding="0" cellspacing="0" border="1" bordercolor="#ebebeb">
+                        	<tr height="35" bgcolor="#eee">
+                            	<th>订单编号</th>
+                            	<th>员工单号</th>
+                            	<th>服务时长</th>
+                            	<th>金额</th>
+                            	<th>是否结算</th>
+                            	<th>操作</th>
+                            </tr>
+                        	<tr class="addtr">
+                            	<td>223432432424</td>
+                            	<td>223432432424</td>
+                            	<td>60:00</td>
+                            	<td>200</td>
+                            	<td id="zhifu">否</td>
+                            	<td> <button disabled id="anliu" onclick="onckilkbotn()">支付</button> </td>
+                            </tr>
+                        </table>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var is = document.getElementById("zhifu");
+		var bton = document.getElementById("anliu");
+		var istxt = is.innerHTML;
+		function onckilkbotn(){
+			is.innerHTML = "是";
+		}
+			if(istxt === "是"){
+				
+			}else if(istxt === "否"){
+				bton.removeAttribute("disabled");
+			}
+		
+		
+	</script>
+</html>
+

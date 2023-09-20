@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>登录</title>
+		<base href="http://localhost:8080/FKXMZ/">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body>
+		<div class="head"><a href="index.html"><span><</span><span>&nbsp返回</span></a></div>
+		<div class="login-app">
+			<div class="login-header" onclick="checkRadio()">
+				<input type="radio" name="login-opt" id="login" checked="checked">
+				<label for="login" class="m-btn">登录账号</label>
+				<input type="radio" name="login-opt" id="register" >
+				<label for="register" class="q-btn" >注册账号</label>
+			</div>
+			<div class="login-body">
+				<div id="form-bar">
+					<form action="LoginServlet" class="login-form" method="post">
+						<p>账号：</p>
+						<br>
+						<input type="text" placeholder="用户名" class="username" value="" id="dlu" name="username">
+						<br>
+						<p>密码：</p>
+						<br>
+						<input type="password" placeholder="密码" class="password" id="mima" name="password">
+						<br>
+						<!-- <input type="checkbox" class="rememberMe" /> -->
+						<!-- <lable>记住密码</lable> -->
+						<br>
+						<input type="submit" value="登  录" class="login-button" onclick="onclickFun()"></input>
+						<p><a href="">找回密码</a>
+							<lable class="haimeiyou"> | 还没有注册账号? </lable><a href="">立即注册</a>
+						</p>
+						<div class="icon">
+							<a href="#"><img src="img/QQ.png" alt=""></a>
+							<a href="#"><img src="img/微信.png" alt=""></a>
+						</div>
+					</form>
+					<form action="RegistServlet" class="register-form" method="post">
+						<p>手机号码：</p>
+						<br>
+						<input type="text" placeholder="请输入手机号" class="register-phone" id="newphone" name="phone">
+						<br>
+						<p>用户名：</p>
+						<br>
+						<input type="text" placeholder="请输入新用户名" class="register-username" id="newusername" name="username">
+						<br>
+						<p>密码：</p>
+						<br>
+						<input type="password" placeholder="请输入新密码" class="register-password" id="newpassword" name="password">
+						<br>
+						<p>确认密码：</p>
+						<br>
+						<input type="password" placeholder="请再次输入密码" class="yanzma" id="agpassword" name="agpassword"></input>
+						<br>
+						<!-- <input type="checkbox" class="rememberMe"/> <lable>记住密码</lable> -->
+						<input type="submit" value="注  册" class="login-button" onclick="oncilckRegister()"></input>
+
+						<input type="checkbox" class="jizhu" name="xieyi" checked/>
+						<lable>我已阅读并同意<a href="#">《用户服务协议》</a>和<a href="#">《隐私政策》</a></lable>
+
+						<div class="icon">
+							<a href="#"><img src="img/QQ.png" alt=""></a>
+							<a href="#"><img src="img/微信.png" alt=""></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script>
+		let login_opt = document.getElementsByName('login-opt')
+		let form_bar = document.getElementById('form-bar')
+		
+		function checkRadio() {
+			if (login_opt[0].checked) {
+				form_bar.style.transform = 'translateX(0)';
+			} else if (login_opt[1].checked) {
+				form_bar.style.transform = 'translateX(-450px)';
+			}
+		}
+		//登录验证
+		
+		function onclickFun(){
+			let login_yongh = document.getElementById("dlu");
+			let login_mima = document.getElementById("mima");
+			let usernametxt = login_yongh.value;//得到输入的用户名
+			let passwordtxt = login_mima.value;//得到输入的密码
+			// alert(typeof(usernametxt)+typeof(passwordtxt));
+			//用户名正则表达式
+			// let patt = /^\w{3,10}$/;
+			// //暂时写死账号acb123密码123456
+			// //
+			// if(patt.test(usernametxt)){
+
+			// }else{
+			// 	alert("输入不合法！");
+			// }
+		}
+		//注册
+		function oncilckRegister(){
+			let newphone = document.getElementById("newphone");
+			let newusername = document.getElementById("newusername");
+			let newpassword = document.getElementById("newpassword");
+			let agpassword = document.getElementById("agpassword");
+			//得到输入的内容
+			let newphonetxt = newphone.value;//电话号码
+			let newusernametxt = newusername.value;//用户名
+			let newpasswordtxt = newpassword.value;//密码
+			let agpasswordtxt = agpassword.value;//确认密码
+			//电话号码正则表达式
+			let pattpassword = /^[1][3,4,5,7,8][0-9]{9}$/
+			//用户名正则表达式
+			let patt = /^\w{3,10}$/;
+			if(pattpassword.test(newphonetxt)){
+				if(newpasswordtxt === agpasswordtxt){
+					if(patt.test(newusernametxt)){
+						alert("注册成功！")
+						// window.location.href = "http://127.0.0.1:8848/html/%E5%A4%A7%E4%BA%8C%EF%BC%88%E4%B8%8A%EF%BC%89/%E9%A1%B9%E7%9B%AE/%E5%89%AF%E9%A1%B5/%E7%99%BB%E5%BD%95.html";
+					}else{
+						// alert("用户名格式错误！")
+					}
+				}else{
+					alert("两次密码不相同！")
+				}
+			}else{
+				// alert("手机号格式错误！")
+			}
+		}
+		
+	</script>
+</html>
+		
+		
+

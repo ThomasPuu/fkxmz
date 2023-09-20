@@ -1,0 +1,294 @@
+/* 统一格式 */
+* {
+	
+	padding: 0;
+}
+
+body {
+	max-width: 1450px;
+	background: #ffffff;
+	margin: 0 auto;
+}
+
+/* * {
+			margin: 0;
+			padding: 0;
+		} */
+header {
+	background-color: #ffffff;
+	width: 100%;
+	height: 200px;
+	box-sizing：border-box
+}
+
+.logo {
+	width: 100%;
+	height: 101px;
+	box-sizing：border-box
+}
+
+.tupian {
+	width: 283px;
+	height: 102px;
+	float: left;
+	margin-top: -10px;
+}
+
+.zu {
+	position: relative;
+	top: 25px;
+	float: left;
+	margin: 5px;
+	font-size: 12px;
+	padding-top: 35px;
+	color: #797979;
+}
+
+.rexian {
+	width: 76px;
+	height: 35px;
+	float: right;
+	margin: 10px;
+	padding-right: 40px;
+	font-size: 19px;
+	color: #7D7D95;
+}
+
+.dianhua {
+	width: 72px;
+	height: 50px;
+	float: right;
+	margin-right: 5px;
+	padding-right: -320px;
+	padding-top: 35px;
+}
+
+.sj {
+	width: 120px;
+	height: 50px;
+	float: right;
+	margin-right: -120px;
+	padding-top: 45px;
+	font-size: 19px;
+}
+
+/* 导航栏 */
+.daohang {
+	width: 100%;
+	height: 50px;
+	background-color: #fafaf9;
+	padding-bottom: 20px;
+
+}
+.daohang ul {
+	position: relative;
+	left: 205px;
+	width: 1020px;
+	height: 100px;
+	margin: 0;
+	/* border: solid 1px #000; */
+}
+.daohang li {
+	margin: 10px 70px;
+	list-style: none;
+	text-decoration: none;
+	float: left;
+	font-size: 24px;
+	color: #797979;
+	margin-top: 20px;
+
+}
+
+.daohang ul li a {
+	text-decoration: none;
+	padding-top: 20px;
+	color: #797979;
+}
+
+.daohang ul li: {
+	float: left;
+	display: block;
+	margin: 0px 0px;
+	position: relative;
+	color: #4b4b4b;
+	margin-top: -100px;
+
+}
+
+.li {
+	padding-left: 5px;
+	width: 50px;
+	height: 40px;
+	/* background-color: #fff2f8; */
+}
+/* 第一部分 */
+#lianxi {
+	margin: 0 auto;
+	width: 80%;
+}
+#lianxi img {
+	width: 100%;
+}
+#lianxi {
+	line-height: 40px;
+	color: #4b4b4b;
+	font-size: 20px;
+}
+#lianxi h1 {
+	color: #797979;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+}
+#fenbu {
+	padding-left: 100px;
+	padding-bottom: 20px;
+}
+#lianxi .iconfont {
+	letter-spacing: 60px;
+	font-size: 30px;
+	color: #797979;
+}
+#city {
+	font-size: 20px;
+	font-weight: bold;
+	color: #797979;
+}
+#txt {
+	color: #4b4b4b;
+	font-size: 14px;
+}
+table{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0px 20px;
+	/* border: solid 3px red; */
+}
+table tr{
+	background-color: #efefef;
+}
+table .add01{
+	height: 350px;
+}
+.add01 td{
+	padding: 10px 50px;
+}
+table .add01 td :last-child{
+	border-left: 3px solid #797979;
+}
+table .add02 {
+	height: 480px;
+}
+.add02 td{
+	padding: 10px 10px;
+}
+/* 第二部分 */
+ #xinxi {
+	position: relative;
+	top: -350px;
+	left: 200px;
+	width: 515px;
+	height: 350px;
+	/* border:  3px solid red; */
+}
+ #input input {
+	outline-style: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 7px 4.5px;
+	font-size: 20px;
+}
+textarea {
+	margin-top: 10px;
+	outline-style: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 20px;
+	font-family: 微软雅黑;
+	resize: none;
+}
+ #liuyan input {
+	position: relative;
+	outline-style: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 5px 20px;
+	letter-spacing: 10px;
+	color: #757575;
+	left: 420px;
+}
+
+/* 尾巴（备案） */
+.last-text4 img {
+	width: 110px;
+	height: 16px;
+}
+
+.last-text6 img {
+	width: 120px;
+	height: 16px;
+}
+
+.last-text7 img:nth-child(1) {
+	width: 15px;
+	height: 12px;
+}
+
+.last-text7 img:nth-child(4) {
+	width: 15px;
+	height: 17px;
+}
+
+.last {
+	position: absolute;
+	margin-top: 10px;
+	color: rgb(155, 155, 155);
+	font-size: 12px;
+	width: 480px;
+	height: 150px;
+	top: 0;
+	left: 0;
+	/* border: #000000 1px solid; */
+}
+
+.last img {
+	vertical-align: middle;
+}
+
+.last a {
+	color: #3675a6;
+}
+
+footer {
+	position: relative;
+	width: 950px;
+	height: 150px;
+	margin-top: 30px;
+	border-top: rgb(210, 210, 210) 1px dashed;
+}
+
+.last span {
+	line-height: 20px;
+}
+
+.last-db {
+	position: absolute;
+	margin: 0;
+	width: 400px;
+	font-size: 12px;
+	top: 10px;
+	left: 550px;
+	/* border: #000000 1px solid; */
+}
+
+.last-db span a {
+	color: #3675a6;
+}
+
+footer a:hover {
+	background-color: #3377AA;
+	color: white;
+}
+#last {
+	margin: 0 240px;
+}
